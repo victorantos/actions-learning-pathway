@@ -6,6 +6,7 @@ jobs:
     steps:
       - name: Checkout repository code
         uses: actions/checkout@v3
-      - run: echo "$(cat hello_world.txt)"
+      - name: Say hello world
+        run: echo "$(cat hello_world.txt)"
         
     
